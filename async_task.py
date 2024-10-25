@@ -55,7 +55,7 @@ async def buy_new_laptop():
     
     
 async def main():
-    # Run tasks concurrently using gather
+    
     await asyncio.gather(
         get_the_visa(),
         find_accomodation(),
@@ -63,5 +63,5 @@ async def main():
         buy_new_laptop()
     )
 
-# Run the event loop
+
 asyncio.run(main())
